@@ -27,7 +27,7 @@ const projects = () => {
     }, []);
 
     return (
-        <div className="bg-credentials h-auto flex flex-col justify-center items-center py-44 px-8 md:px-14 lg:px-20 xl:px-28">
+        <div className="bg-credentials h-auto flex flex-col justify-center items-center py-44 px-8 md:px-14 lg:px-20 xl:px-28"  id='projects'>
             <div className="flex flex-col justify-center items-center">
                 {/*Title*/}
                 <h1 className="text-white text-[30px] xl:text-[40px] mb-[70px]">
@@ -64,7 +64,7 @@ const projects = () => {
                                 </div>
                                 {/*Link to Project1*/}
                                 <div className="glass-code rounded-full w-[30px] h-[30px] xl:w-[40px] xl:h-[40px] flex justify-center items-center">
-                                    <Link href={"https://github.com/HopeeeX"}>
+                                    <Link href={"/project1"}>
                                         <MdRemoveRedEye
                                             color="white"
                                             size={18}
@@ -114,7 +114,7 @@ const projects = () => {
                                 </div>
                                 {/*Link to Project1*/}
                                 <div className="glass-code rounded-full w-[30px] h-[30px] xl:w-[40px] xl:h-[40px] flex justify-center items-center">
-                                    <Link href={"https://github.com/HopeeeX"}>
+                                    <Link href={"/project2"}>
                                         <MdRemoveRedEye
                                             color="white"
                                             size={18}
@@ -164,7 +164,7 @@ const projects = () => {
                                 </div>
                                 {/*Link to Project1*/}
                                 <div className="glass-code rounded-full w-[30px] h-[30px] xl:w-[40px] xl:h-[40px] flex justify-center items-center">
-                                    <Link href={"https://github.com/HopeeeX"}>
+                                    <Link href={"/project3"}>
                                         <MdRemoveRedEye
                                             color="white"
                                             size={18}
