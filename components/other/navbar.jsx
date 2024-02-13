@@ -21,6 +21,12 @@ const navbar = () => {
         window.addEventListener('scroll', changeColor)
     }, [])
 
+    const handleClickScroll = (section) => {
+        const element = document.getElementById(section);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+        }
 
     return (
         <div className={`w-full h-[80px] lg:h-[115] flex flex-row justify-between px-8 md:px-14 lg:px-20 xl:px-28 2xl:px-32 fixed top-0 left-0 z-10 ${color}` }>
@@ -32,10 +38,10 @@ const navbar = () => {
             <div className='flex flex-row justify-between'>
                 {/*Menu-lg)*/}
                 <ol className='hidden lg:flex items-center gap-[15px] xl:gap-[20px] 2xl:gap-[40px] text-white text-[16px] xl:text-[20px]'>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Credentials</li>
-                    <li>Projects</li>
+                    <li className='cursor-pointer' onClick={() => {handleClickScroll('about')}}>About</li>
+                    <li className='cursor-pointer' onClick={() => {handleClickScroll('services')}}>Services</li>
+                    {/* <li>Credentials</li> */}
+                    <li className='cursor-pointer' onClick={() => {handleClickScroll('projects')}}>Projects</li>
                 </ol>
                 <div className='flex flex-row gap-[15px] items-center lg:pl-[20px] xl:pl-[30px] 2xl:pl-[60px]'>
                     {/*Menu-sm*/}
@@ -44,7 +50,7 @@ const navbar = () => {
                     </div>
                     {/*Code Link*/}
                     <div className='glass-code rounded-2xl lg:rounded-3xl w-[30px] h-[30px] lg:w-[40px] lg:h-[40px] flex justify-center items-center'>
-                        <Link href={"https://github.com/HopeeeX"}>
+                        <Link href={"https://github.com/HopeeeX/HopeX-Portfolio"}>
                             <FaCode color='white' size={18}/>
                         </Link>
                     </div>

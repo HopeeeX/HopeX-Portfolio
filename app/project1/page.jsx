@@ -38,10 +38,10 @@ const page = () => {
             <div className="flex flex-col">
                 {/*Button*/}
                 <div className="mt-[100px]">
-                    <button className="text-white text-[13px] xl:text-[15px] flex flex-row gap-[10px] items-center">
+                    <Link href="/" className="text-white text-[13px] xl:text-[15px] flex flex-row gap-[10px] items-center">
                         <FaLongArrowAltLeft color="white" size={18} />
                         Back to Home
-                    </button>
+                    </Link>
                 </div>
                 {/*Image*/}
                 <div className="mt-[20px]">
@@ -65,7 +65,7 @@ const page = () => {
                         {/*Link*/}
                         <div className="glass-code rounded-full w-[30px] h-[30px] lg:w-[40px] lg:h-[40px] flex justify-center items-center'">
                             <Link
-                                href={"https://github.com/HopeeeX"}
+                                href={"https://www.figma.com/file/RG9lVxIhhD8QJ4ofr6tiSS/Presentation-Draft?type=design&mode=design&t=KCB4IGqPKckQVgAU-1"}
                                 className="flex justify-center items-center"
                             >
                                 <IoLogoFigma color="white" size={18} />
@@ -130,10 +130,10 @@ const page = () => {
                     </div>
                     {/*Button*/}
                     <div className="mt-[40px] flex justify-end">
-                        <button className="text-white text-[13px] xl:text-[15px] flex flex-row gap-[10px] items-center">
+                        <Link href="/" className="text-white text-[13px] xl:text-[15px] flex flex-row gap-[10px] items-center">
                             Back to Home
                             <FaLongArrowAltRight color="white" size={18} />
-                        </button>
+                        </Link>
                     </div>
                 </div>
                 {/*Spacer*/}
