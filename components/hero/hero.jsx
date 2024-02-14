@@ -1,6 +1,8 @@
+"use client"
 import { Chillax_Medium } from "@/app/fonts";
 import React from "react";
-import Socials from "../hero/socials"
+import Socials from "../hero/socials";
+import { TypeAnimation } from "react-type-animation";
 
 function hero() {
     return (
@@ -19,23 +21,35 @@ function hero() {
                     </div>
                     {/*Title & Description*/}
                     <div className="flex flex-col">
-                        <h1 className="text-white text-[30px] xl:text-[40px] mt-[25px]">
-                            You're Frontend Developer...
-                        </h1>
+                        <div className="text-white text-[30px] xl:text-[40px] mt-[25px]">
+                            <TypeAnimation
+                                sequence={[
+                                    "You're Frontend Developer",
+                                    1000, // wait 1s before replacing "Mice" with "Hamsters"
+                                    "You're UI Designer",
+                                    1000,
+                                ]}
+                                wrapper="span"
+                                speed={50}
+                                style={{
+                                    display: "inline-block",
+                                }}
+                                repeat={Infinity}
+                            />
+                        </div>
                         <h2
-                            className= {`${Chillax_Medium} text-white text-[15px] xl:text-[20px] text-opacity-50 text-justify mt-[20px] mr-[20px] md:mr-[40px] lg:mr-[150px] xl:mr-0 2xl:w-[550px]`}
+                            className={`${Chillax_Medium} text-white text-[15px] xl:text-[20px] text-opacity-50 text-justify mt-[20px] mr-[20px] md:mr-[40px] lg:mr-[150px] xl:mr-0 2xl:w-[550px]`}
                         >
-                            To develop and design visually-appealing yet efficient and innovative product.
+                            To develop and design visually-appealing yet
+                            efficient and innovative product.
                         </h2>
-                        <hr className="line mt-[30px] xl:mt-[35px] mr-[50px] md:mr-[100px] lg:mr-[190px] xl:mr-5 2xl:w-[450px]"/>
+                        <hr className="line mt-[30px] xl:mt-[35px] mr-[50px] md:mr-[100px] lg:mr-[190px] xl:mr-5 2xl:w-[450px]" />
                     </div>
                     {/*Socials*/}
-                    <Socials/>
+                    <Socials />
                 </div>
                 {/*Image*/}
-                <div className="hidden glass-circle xl:flex w-96 h-96 2xl:w-[450px] 2xl:h-[450px] rounded-full my-[30px] 2xl:mr-14">
-                    
-                </div>
+                <div className="hidden glass-circle xl:flex w-96 h-96 2xl:w-[450px] 2xl:h-[450px] rounded-full my-[30px] 2xl:mr-14"></div>
             </div>
         </div>
     );
