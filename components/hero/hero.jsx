@@ -49,7 +49,7 @@ function hero() {
                     <Socials />
                 </div>
                 {/*Image*/}
-                <div className="hidden glass-circle xl:flex w-96 h-96 2xl:w-[450px] 2xl:h-[450px] rounded-full my-[30px] 2xl:mr-14"></div>
+                <div className="hidden glass-circle xl:flex w-96 h-96 2xl:w-[450px] 2xl:h-[450px] rounded-full my-[30px] 2xl:mr-14 animate-bounce-slow"></div>
             </div>
         </div>
     );
