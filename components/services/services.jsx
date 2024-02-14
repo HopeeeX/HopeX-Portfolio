@@ -31,7 +31,7 @@ function services() {
                             <h3
                                 className={`${Chillax_Medium} text-white text-opacity-60 text-justify text-[13px] mt-[15px] lg:mt-[25px] lg:text-[16px]`}
                             >
-                                Specialists in creating interactive components
+                                Specialize in creating interactive components
                                 of websites or applications that users directly
                                 interact with. This involves translating design
                                 mockups to functional code, testing

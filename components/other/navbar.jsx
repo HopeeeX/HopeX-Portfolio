@@ -8,7 +8,11 @@ import Link from 'next/link';
 
 const navbar = () => {
     const [color, setColor] = useState('')
+    const [showMenu, setShowMenu] = useState(false);
 
+    const handleMenuToggle = () => {
+        setShowMenu(!showMenu);
+    };
 
     useEffect(() => {
         const changeColor = () => {
@@ -45,9 +49,18 @@ const navbar = () => {
                 </ol>
                 <div className='flex flex-row gap-[15px] items-center lg:pl-[20px] xl:pl-[30px] 2xl:pl-[60px]'>
                     {/*Menu-sm*/}
-                    <div className='lg:hidden'>
+                    <button className='lg:hidden' onClick={handleMenuToggle}>
                         <IoMenu color='white' size={30}/>
-                    </div>
+                    </button>
+
+                    {showMenu && (
+                        <ol className='lg:hidden glass-wrapper w-[110px] absolute top-16 right-[5px] z-10 py-2 px-4 text-white hero-text text-[16px]'>
+                            <li onClick={() => {handleClickScroll("about")}} className='block text-white my-1'>About</li>
+                            <li onClick={() => {handleClickScroll("services")}} className='block text-white my-1'>Services</li>
+                            <li onClick={() => {handleClickScroll("projects")}} className='block text-white my-1'>Projects</li>
+                        </ol>
+                    )}
+
                     {/*Code Link*/}
                     <div className='glass-code rounded-2xl lg:rounded-3xl w-[30px] h-[30px] lg:w-[40px] lg:h-[40px] flex justify-center items-center'>
                         <Link href={"https://github.com/HopeeeX/HopeX-Portfolio"}>
