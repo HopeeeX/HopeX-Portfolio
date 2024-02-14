@@ -25,8 +25,7 @@ function hero() {
                         <h2
                             className= {`${Chillax_Medium} text-white text-[15px] xl:text-[20px] text-opacity-50 text-justify mt-[20px] mr-[20px] md:mr-[40px] lg:mr-[150px] xl:mr-0 2xl:w-[550px]`}
                         >
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore{" "}
+                            To develop and design visually-appealing yet efficient and innovative product.
                         </h2>
                         <hr className="line mt-[30px] xl:mt-[35px] mr-[50px] md:mr-[100px] lg:mr-[190px] xl:mr-5 2xl:w-[450px]"/>
                     </div>

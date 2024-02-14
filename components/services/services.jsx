@@ -17,7 +17,7 @@ function services() {
                 {/*Content*/}
                 <div className="mt-[50px] md:grid md:grid-cols-2 gap-[40px] lg:gap-[60px] xl:gap-[100px]">
                     {/*Frontend*/}
-                    <div className="glass-card rounded-[10px] px-[30px] py-[50px] xl:px-[50px] 2xl:w-[400px] 2xl:py-[6opx] 2xl:px-[30px]">
+                    <div className="glass-card rounded-[10px] px-[30px] py-[50px] xl:px-[50px] 2xl:w-[400px] 2xl:py-[6opx] 2xl:px-[40px]">
                         <div className="bg-[#4A6CF7] rounded-full w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] xl:w-[60px] xl:h-[60px] flex flex-col justify-center items-center">
                             <MdDesktopWindows
                                 color="white"
@@ -29,7 +29,7 @@ function services() {
                         </h2>
                         <div>
                             <h3
-                                className={`${Chillax_Medium} text-white text-opacity-60 text-justify text-[13px] mt-[15px] lg:mt-[25px] lg:text-[20px]`}
+                                className={`${Chillax_Medium} text-white text-opacity-60 text-justify text-[13px] mt-[15px] lg:mt-[25px] lg:text-[16px]`}
                             >
                                 Specialists in creating interactive components
                                 of websites or applications that users directly
@@ -42,7 +42,7 @@ function services() {
                         </div>
                     </div>
                     {/*UI Design*/}
-                    <div className="glass-card rounded-[10px] px-[30px] py-[50px] xl:px-[50px] 2xl:w-[400px] 2xl:py-[6opx] 2xl:px-[30px] mt-[40px] md:mt-0">
+                    <div className="glass-card rounded-[10px] px-[30px] py-[50px] xl:px-[50px] 2xl:w-[400px] 2xl:py-[6opx] 2xl:px-[40px] mt-[40px] md:mt-0">
                         <div className="bg-[#4A6CF7] rounded-full w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] xl:w-[60px] xl:h-[60px] flex flex-col justify-center items-center">
                             <FaPencilRuler
                                 color="white"
@@ -54,7 +54,7 @@ function services() {
                         </h2>
                         <div>
                             <h3
-                                className={`${Chillax_Medium} text-white text-opacity-60 text-justify text-[13px] mt-[15px] lg:mt-[25px] lg:text-[20px]`}
+                                className={`${Chillax_Medium} text-white text-opacity-60 text-justify text-[13px] mt-[15px] lg:mt-[25px] lg:text-[16px]`}
                             >
                                 Crafting visually appealing and user-friendly
                                 interfaces for websites, applications, or
