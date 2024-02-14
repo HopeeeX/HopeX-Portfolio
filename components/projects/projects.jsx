@@ -75,7 +75,7 @@ const projects = () => {
                         </div>
                     </div>
                     {/*Project 2*/}
-                    <div className="glass-project flex flex-col rounded-[10px] mt-[40px] md:mt-0">
+                    <div className="glass-project flex flex-col rounded-[10px] mt-[40px] xl:mt-0">
                         {/*Image*/}
                         <div>
                             <Image
@@ -125,7 +125,7 @@ const projects = () => {
                         </div>
                     </div>
                     {/*Project 3*/}
-                    <div className="glass-project flex flex-col rounded-[10px] mt-[40px] md:mt-0">
+                    <div className="glass-project flex flex-col rounded-[10px] mt-[40px] xl:mt-0">
                         {/*Image*/}
                         <div>
                             <Image
