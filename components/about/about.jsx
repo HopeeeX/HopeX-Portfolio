@@ -21,9 +21,9 @@ function about() {
                 <div className="lg:px-8 xl:px-0 xl:w-[55%]">
                     {/*Title & Description*/}
                     <div className="flex flex-col justify-center items-center xl:items-start mt-10 xl:mt-0">
-                        <a href="/Medalla,Christine Hope_Resume.pdf" className="text-white text-[30px] xl:text-[40px] xl:text-start">
+                        <h1 className="text-white text-[30px] xl:text-[40px] xl:text-start">
                             ABOUT ME
-                        </a>
+                        </h1>
                         <h2 className={`${Chillax_Medium} text-white text-[15px] xl:text-[20px] text-opacity-50 text-justify mt-[20px] xl:mt-0`}>
                             A developer & designer of applications of different
                             platforms. I’m passionate in learning new
@@ -45,7 +45,7 @@ function about() {
                             <Link  href="tel:+639261632561">+639261632561</Link>
                         </div>
                         <div className="mt-[10px]">
-                            <a href={''} className={`${Chillax_Medium} text-white text-opacity-80 text-[13px] lg:text-[18px] underline`}>Download resume</a>
+                            <a href={'/Medalla,Christine Hope_Resume.pdf'} className={`${Chillax_Medium} text-white text-opacity-80 text-[13px] lg:text-[18px] underline`}>Download resume</a>
                         </div>
                     </div>
                 </div>

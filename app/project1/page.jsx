@@ -34,7 +34,7 @@ const page = () => {
     }, []);
 
     return (
-        <div className="bg-projects1 flex flex-col justify-center items-center">
+        <div className="bg-projects1 flex flex-col justify-center items-center px-[15px]">
             <div className="flex flex-col">
                 {/*Button*/}
                 <div className="mt-[100px]">
