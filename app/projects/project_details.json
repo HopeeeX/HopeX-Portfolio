@@ -1,0 +1,52 @@
+[
+    {
+        "image": "/assets/images/projects/FoodOrdering_MobApp.png",
+        "mobile_image1": "/assets/images/projects/FoodOrdering_MobApp (2).png",
+        "mobile_image2": null,
+        "desktop_image1": "/assets/images/projects/FoodOrdering_MobApp (3).png",
+        "desktop_image2": "/assets/images/projects/FoodOrdering_MobApp (4).png",
+        "role": "UI Designer",
+        "link": "https://www.figma.com/file/RG9lVxIhhD8QJ4ofr6tiSS/Presentation-Draft?type=design&mode=design&t=KCB4IGqPKckQVgAU-1",
+        "desc": "A responsive food ordering system app that streamline various aspects of a food business. This is designed to cater the needs of food business owners, employees and franchisees. It combines several essential features including employees attendance system, food and stock ordering, a franchise management system and view analytics for data needed."
+    },
+    {
+        "image": "/assets/images/projects/BusMonitoring_WebApp.png",
+        "mobile_image1": null,
+        "mobile_image2": null,
+        "desktop_image1": "/assets/images/projects/BusMonitoring_WebApp (2).png",
+        "desktop_image2": "/assets/images/projects/BusMonitoring_WebApp (3).png",
+        "role": "UI Designer & Frontend Developer",
+        "link": "https://www.figma.com/file/8WsaPxAy2QEcFz9ExeIFNS/UBE-Express-Proposed-System-UI?type=design&mode=design&t=KCB4IGqPKckQVgAU-1",
+        "desc": "A responsive web-based application that efficiently monitors the condition and track the location of the buses. This includes a range of features such as inspection list, various user personas and a map view for real-time location monitoring. Built using React."
+    },
+    {
+        "image": "/assets/images/projects/RepairAppliance_Website.png",
+        "mobile_image1": null,
+        "mobile_image2": null,
+        "desktop_image1": "/assets/images/projects/RepairAppliance_Website (2).png",
+        "desktop_image2": "/assets/images/projects/RepairAppliance_Website (3).png",
+        "role": "UI Designer & Frontend Developer",
+        "link": "https://www.figma.com/file/e8GaEPtwTnR6N8lpDUyhc5/Repair-Shop-(Viewing)?type=design&mode=design&t=KCB4IGqPKckQVgAU-1",
+        "desc": "Dealt with the design and the development of the website which features a user-friendly interface and essential information about appliance repair services. This primary focus on providing an intuitive and efficient platform for clients to book repair services. Built usingWordPress."
+    },
+    {
+        "image": "/assets/images/projects/VisitorChecklist_MobApp.png",
+        "mobile_image1": "/assets/images/projects/VisitorChecklist_MobApp (2).png",
+        "mobile_image2": "/assets/images/projects/VisitorChecklist_MobApp (3).png",
+        "desktop_image1": null,
+        "desktop_image2": null,
+        "role": "UI Designer & Frontend Developer",
+        "link": "https://github.com/HopeeeX/Rating-Criteria-Form_MobileApp",
+        "desc": "Dealt with the product design and frontend development of the app which generates PDF files of checklist forms for evaluating butchers employee of the company. Built using Flutter."
+    },
+    {
+        "image": "/assets/images/projects/TechDash_WebApp.png",
+        "mobile_image1": "/assets/images/projects/TechDash_WebApp (2).png",
+        "mobile_image2": "/assets/images/projects/TechDash_WebApp (3).png",
+        "desktop_image1": "/assets/images/projects/TechDash_WebApp (4).png",
+        "desktop_image2": "/assets/images/projects/TechDash_WebApp (5).png",
+        "role": "UI Designer & Frontend Developer",
+        "link": "https://github.com/JosuX/fix-appliance-now",
+        "desc": "Dealt with the design and the frontend development of the web-based app which showcase the dashboard of the repair technician. This shows the table of their accepted, available and schedule bookings. This also include technician registration and their profile viewing. Built using React, Nextjs & Typescript."
+    }
+]

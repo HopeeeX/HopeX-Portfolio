@@ -4,9 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoLogoFigma } from "react-icons/io5";
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
-import { Chillax_Medium } from "../fonts";
+import { FaCode } from "react-icons/fa";
+import { Chillax_Medium } from "../../fonts";
+import project_details from "../project_details.json"
 
-const page = () => {
+const page = ({params}) => {
+    const { projectID } = params;
+    const project_info = project_details[projectID]
     const [width, setWidth] = useState(300); // Default width
 
     useEffect(() => {
@@ -34,7 +38,7 @@ const page = () => {
     }, []);
 
     return (
-        <div className="bg-projects1 flex flex-col justify-center items-center">
+        <div className="bg-projects1 flex flex-col justify-center items-center px-[15px]">
             <div className="flex flex-col">
                 {/*Button*/}
                 <div className="mt-[100px]">
@@ -46,7 +50,7 @@ const page = () => {
                 {/*Image*/}
                 <div className="mt-[20px]">
                     <Image
-                        src={"/assets/images/projects/BusMonitoring_WebApp.png"}
+                        src={project_info.image}
                         width={width}
                         height={300}
                         className="rounded-[10px]"
@@ -59,16 +63,16 @@ const page = () => {
                         {/*Title*/}
                         <div>
                             <h1 className="text-white text-[15px] lg:text-[25px] xl:text-[40px]">
-                                UI Designer & Frontend Developer
+                                {project_info.role}
                             </h1>
                         </div>
                         {/*Link*/}
                         <div className="glass-code rounded-full w-[30px] h-[30px] lg:w-[40px] lg:h-[40px] flex justify-center items-center'">
                             <Link
-                                href={"https://www.figma.com/file/8WsaPxAy2QEcFz9ExeIFNS/UBE-Express-Proposed-System-UI?type=design&mode=design&t=KCB4IGqPKckQVgAU-1"}
+                                href={project_info.link}
                                 className="flex justify-center items-center"
                             >
-                                <IoLogoFigma color="white" size={18} />
+                                {project_info.link.includes("figma") ? <IoLogoFigma color="white" size={18} /> : <FaCode color="white" size={18} />}
                             </Link>
                         </div>
                     </div>
@@ -78,54 +82,60 @@ const page = () => {
                     <div
                         className={` ${Chillax_Medium} w-[250px] md:w-[350px] lg:w-[500px] xl:w-[600px] 2xl:w-[700px] text-white text-opacity-55 text-justify text-[18px] md:text-[20px] mt-[30px]`}
                     >
-                        A responsive web-based application that efficiently
-                        monitors the condition and track the location of the
-                        buses. This includes a range of features such as
-                        inspection list, various user personas and a map view
-                        for real-time location monitoring. Built using React.
+                        {project_info.desc}
                     </div>
-                    {/* Mobile
-                    <div className="mt-[30px]">
+                    {/*Mobile*/}
+                    {project_info.mobile_image1 != null ? <div className="mt-[30px]">
                         <h1 className="text-white text-[15px] lg:text-[25px] xl:text-[40px]">
                             MOBILE
                         </h1>
                         <div className="mt-[30px]">
                             <Image
                                 src={
-                                    "/assets/images/projects/FoodOrdering_MobApp (2).png"
+                                    project_info.mobile_image1
                                 }
                                 width={width}
                                 height={300}
                                 className="rounded-[10px]"
                             />
                         </div>
-                    </div> */}
+                        {project_info.mobile_image2 != null ? <div className="mt-[30px]">
+                            <Image
+                                src={
+                                    project_info.mobile_image2
+                                }
+                                width={width}
+                                height={300}
+                                className="rounded-[10px]"
+                            />
+                        </div>: <></>}
+                    </div> : <></>}
                     {/*Desktop*/}
-                    <div className="mt-[30px]">
+                    {project_info.desktop_image1 != null ? <div className="mt-[30px]">
                         <h1 className="text-white text-[15px] lg:text-[25px] xl:text-[40px]">
                             DESKTOP
                         </h1>
                         <div className="mt-[30px]">
                             <Image
                                 src={
-                                    "/assets/images/projects/BusMonitoring_WebApp (2).png"
+                                    project_info.desktop_image1
                                 }
                                 width={width}
                                 height={300}
                                 className="rounded-[10px]"
                             />
                         </div>
-                        <div className="mt-[50px]">
+                        {project_info.desktop_image2 != null ? <div className="mt-[50px]">
                             <Image
                                 src={
-                                    "/assets/images/projects/BusMonitoring_WebApp (3).png"
+                                    project_info.desktop_image2
                                 }
                                 width={width}
                                 height={300}
                                 className="rounded-[10px]"
                             />
-                        </div>
-                    </div>
+                        </div> : <></>}
+                    </div> : <></>}
                     {/*Button*/}
                     <div className="mt-[40px] flex justify-end">
                         <Link href="/" className="text-white text-[13px] xl:text-[15px] flex flex-row gap-[10px] items-center">
