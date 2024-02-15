@@ -45,7 +45,7 @@ function about() {
                             <Link  href="tel:+639261632561">+639261632561</Link>
                         </div>
                         <div className="mt-[10px]">
-                            <a href={'/Medalla,Christine Hope_Resume.pdf'} className={`${Chillax_Medium} text-white text-opacity-80 text-[13px] lg:text-[18px] underline`}>Download resume</a>
+                            <a href={'/Medalla, Christine Hope_Resume.pdf'} className={`${Chillax_Medium} text-white text-opacity-80 text-[13px] lg:text-[18px] underline`}>Download resume</a>
                         </div>
                     </div>
                 </div>
