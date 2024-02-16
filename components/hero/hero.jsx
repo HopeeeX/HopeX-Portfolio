@@ -25,7 +25,7 @@ function hero() {
                             <TypeAnimation
                                 sequence={[
                                     "You're Frontend Developer",
-                                    1000, // wait 1s before replacing "Mice" with "Hamsters"
+                                    1000,
                                     "You're UI Designer",
                                     1000,
                                 ]}
